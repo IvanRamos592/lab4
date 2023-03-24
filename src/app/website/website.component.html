@@ -1,0 +1,28 @@
+
+<h1>Lista de Posts</h1>
+
+<!-- table para listar los posts-->
+
+<table class="table table-bordered">
+    <tr>
+        <th>
+            titulo
+        </th>
+        <th>
+            body
+        </th>
+
+    </tr>
+
+    <!-- se utiliza la dierctiva ngFor para iterar colecciones -->
+    <tr *ngFor="let item of posts">
+        <td>
+            {{item.titulo}}
+        </td>
+        <td>
+            {{item.cuerpo}}
+        </td>
+
+    </tr>
+
+</table>
